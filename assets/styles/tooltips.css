@@ -27,7 +27,7 @@
   text-transform: none;
   text-overflow: ellipses;
   
-  background-color: #454D5D;
+  background-color: #393E41;
   color: white;
 
   content: attr(data-tooltip);
