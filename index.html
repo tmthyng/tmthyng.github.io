@@ -3,4 +3,32 @@ layout: default
 title: Timothy Ng
 ---
 
-<p>hello, world&#33;</p>
+<div class="height--full">
+  <div class="content--centred">
+    <div class="content--content">
+      <img
+        src="https://ui-avatars.com/api/?background=e9ecef&bold=true&name=Timothy+Ng&size=512"
+        alt="Timothy Ng"
+        class="image--avatar margin--x-auto"
+      />
+
+      <div style="text-align: left">
+        <p>Hi &#128075; My name is Timothy Ng.</p>
+
+        <p>
+          I am a technology and creative enthusiast. Welcome to my corner of the
+          world.
+        </p>
+      </div>
+
+      <div>
+        {% for route in site.data.routes %}
+        <a class="links--connect" href="{{route.href}}">
+          <i class="bi bi-{{route.icon}}"></i>
+          <span style="margin-left: 0.25rem">{{route.label}}</span>
+        </a>
+        {%endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+:root {
+  --background-colour--dark-mode: #{$colour--neutral-dark};
+  --background-colour--light-mode: #{$colour--white};
+  --text-colour--dark-mode: #{$colour--white};
+  --text-colour--light-mode: #{$colour--neutral-dark};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-colour: var(--background-colour--dark-mode);
+    --text-colour: var(--text-colour--dark-mode);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-colour: var(--background-colour--light-mode);
+    --text-colour: var(--text-colour--light-mode);
+  }
+}
+
+html,
+body {
+  background-color: var(--background-colour);
+  color: var(--text-colour);
+  font-family: $font-family--default;
+  font-size: $font-size--default;
+  font-weight: $font-weight--default;
+}
+
+main {
+  margin: 0 auto;
+  max-width: $max-width--screen;
+  width: 100%;
+}
+
+p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
