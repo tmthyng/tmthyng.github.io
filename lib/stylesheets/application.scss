@@ -4,8 +4,11 @@
 @import "reset";
 
 @import "variables";
+@import "mixins";
 @import "base";
 
-@import "height-width";
-@import "layouts";
-@import "margin-padding";
+@import "shared/content";
+@import "shared/height-width";
+@import "shared/images";
+@import "shared/links";
+@import "shared/margin-padding";
